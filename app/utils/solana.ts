@@ -14,9 +14,9 @@ export interface WalletAnalysis {
 }
 
 export const getWalletRank = (volume: number): WalletRank => {
-  if (volume >= 1000) return 'A';
-  if (volume >= 100) return 'B';
-  if (volume >= 10) return 'C';
+  if (volume >= 10) return 'A';
+  if (volume >= 1) return 'B';
+  if (volume >= 0.2) return 'C';
   return 'D';
 };
 
